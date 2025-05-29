@@ -1,4 +1,4 @@
-# Neural Pixels MVP – README
+# Neural Pixels MVP
 
 > *Neural Pixels* turns large language models inside-out, slicing their feed-forward blocks into tiny, content-addressed **pixels** of cognition that can be hot-swapped and fused at run-time.  
 > On an ordinary laptop this design slashes active parameters by ~100×, pushes throughput past 80 tokens / s, and shifts cost from GPU time to simple storage + bandwidth.
