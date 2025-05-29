@@ -75,32 +75,3 @@ flowchart TD
   classDef dec    fill:#ffecec,stroke:#d93636,color:#6d0707;
   classDef comp   fill:#dbf4ff,stroke:#1b8ac9,color:#02466d;
 ```
-```
-
-## 3 | Directory Structure
-
-```text
-neural-pixels/
-├── forge/                  # Pixel-Forge CLI & helpers
-│   ├── forge.py            # create *.npixel grains
-│   └── requirements.txt
-├── runtime/                # inference daemon
-│   ├── server.py           # HTTP / WebSocket entry-point
-│   ├── router/             # ANN search + encoder
-│   │   ├── build_index.py
-│   │   └── __init__.py
-│   ├── cache/              # mmap LRU store
-│   └── fusion/             # TVM / IREE compile helpers
-├── backbone/               # frozen attention checkpoint(s)
-│   └── llama3-8b-q4km.gguf
-├── docs/
-│
-```
-
-Pixel artefacts and the ANN index live in the user cache:
-
-```text
-~/.neural_pixels/
-├── npixels/                # *.npixel files (Neural Pixels)
-└── skill_index.faiss       # router ANN index
-```
