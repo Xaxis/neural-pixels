@@ -17,9 +17,6 @@
 
 ## 2  |  Mermaid Architecture Diagram
 
-> **Tip:** GitHub & VS Code render Mermaid automatically.  
-> Colours use soft pastels for visual clarity; adjust in the `classDef` section.
-
 ```mermaid
 flowchart TD
   %% ──────────────────────  OFF-LINE PIXEL FORGE  ──────────────────────
